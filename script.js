@@ -6,7 +6,7 @@ const filterArray = (arr) => {
     setTimeout(() => {
       const filteredArray = arr.filter((item) => item % 2 === 0);
       resolve(filteredArray);
-    }, 4000);
+    }, 3000);
   }).then((filteredArray) => {
     console.log(filteredArray);
 
@@ -14,7 +14,7 @@ const filterArray = (arr) => {
       setTimeout(() => {
         const multipliedArray = filteredArray.map((item) => item * 2);
         resolve(multipliedArray);
-      }, 3000);
+      }, 1000);
     });
   });
 };
