@@ -1,12 +1,12 @@
 //your JS code here. If required.
-const array = [1, 2, 4, 6, 3];
+const array = [1, 2, 3, 4];
 
 const filterArray = (arr) => {
   return new Promise((resolve) => {
     setTimeout(() => {
       const filteredArray = arr.filter((item) => item % 2 === 0);
       resolve(filteredArray);
-    }, 3000);
+    }, 1000);
   }).then((filteredArray) => {
     console.log(filteredArray);
 
@@ -14,7 +14,7 @@ const filterArray = (arr) => {
       setTimeout(() => {
         const multipliedArray = filteredArray.map((item) => item * 2);
         resolve(multipliedArray);
-      }, 1000);
+      }, 3000);
     });
   });
 };
